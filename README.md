@@ -8,7 +8,7 @@ An e-commerce application built with react. Routing with react-router-dom and st
 * npm install
 * npm start
 
-[Live Site](https://github.com).
+[Live Site](https://lumili-store.vercel.app/).
 
 ## Built with
 * React
