@@ -19,10 +19,10 @@ function StoreProvider({ children }) {
         total_items: 0,
         sub_total: 0,
         shipping: 0,
-        products: items,
+        products: [...items],
+        searchedProducts: [...items],
         message_text: '',
         message_type: '',
-        search: ''
     }
 
 
@@ -61,12 +61,9 @@ function StoreProvider({ children }) {
     const decreament = (id) => {
         dispatch({ type: 'DECREAMENT', payload: id })
     }
-    const handleChange = (e) => {
-        dispatch({ type: 'SEARCH', payload: e })
-    }
-    const handleSubmit = (e, products, search) => {
-        e.preventDefault()
-        dispatch({ type: 'SEARCH_PRODUCTS', payload: { products, search } })
+
+    const searchProducts = (products, value) => {
+        dispatch({ type: 'SEARCH_PRODUCTS', payload: { products, value } })
     }
 
     return <StoreContext.Provider
@@ -80,8 +77,7 @@ function StoreProvider({ children }) {
                 removeCartItem,
                 increament,
                 decreament,
-                handleChange,
-                handleSubmit,
+                searchProducts,
             }
         }
     >

@@ -1,14 +1,23 @@
+import { useEffect, useState } from 'react';
 import { useGlobalContext } from '../context/store_context';
-import { FaSearch } from 'react-icons/fa';
 
 function Search({ products }) {
-    const { search, handleChange, handleSubmit } = useGlobalContext()
+    const [value, setValue] = useState('');
+    const { searchProducts } = useGlobalContext();
+
+    useEffect(() => {
+        searchProducts(products, value.toLowerCase())
+    }, [value, products, searchProducts]);
 
     return (
         <article>
-            <form>
-                <input type="text" value={search} onChange={(e) => handleChange(e.target.value)} />
-                <button type="submit" onClick={(e) => handleSubmit(e, products, search)}><FaSearch /></button>
+            <form className='search-form'>
+                <input
+                    type="text"
+                    placeholder='Search products...'
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                />
             </form>
         </article>
     );

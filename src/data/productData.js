@@ -16,7 +16,7 @@ const products = [
     {
         id: 1,
         icon: Airpod1,
-        name: 'Pocket friendly Airpod',
+        name: 'pocket friendly airpod',
         cartegory: 'electronics',
         price: '6000',
         review: '50',
@@ -42,7 +42,7 @@ const products = [
     {
         id: 3,
         icon: Airpod3,
-        name: 'Best Sound airpod',
+        name: 'best Sound airpod',
         cartegory: 'electronics',
         price: '13000',
         review: '60',
@@ -68,7 +68,7 @@ const products = [
     {
         id: 5,
         icon: Headphone1,
-        name: 'Pocket friendly Airpod',
+        name: 'high sound headphone',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -81,7 +81,7 @@ const products = [
     {
         id: 6,
         icon: Headphone2,
-        name: 'Pocket friendly Airpod',
+        name: 'headphone',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -94,7 +94,7 @@ const products = [
     {
         id: 7,
         icon: Headphone3,
-        name: 'Pocket friendly Airpod',
+        name: 'headphone',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -107,7 +107,7 @@ const products = [
     {
         id: 8,
         icon: Headphone4,
-        name: 'Pocket friendly Airpod',
+        name: 'headphone',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -120,7 +120,7 @@ const products = [
     {
         id: 9,
         icon: Headphone5,
-        name: 'Pocket friendly Airpod',
+        name: 'headphone',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -133,7 +133,7 @@ const products = [
     {
         id: 10,
         icon: Laptop1,
-        name: 'Pocket friendly Airpod',
+        name: 'portable laptop',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -146,7 +146,7 @@ const products = [
     {
         id: 11,
         icon: Laptop2,
-        name: 'Pocket friendly Airpod',
+        name: 'high performance laptop',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -159,7 +159,7 @@ const products = [
     {
         id: 12,
         icon: Laptop3,
-        name: 'Pocket friendly Airpod',
+        name: 'new arrival laptop',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -172,7 +172,7 @@ const products = [
     {
         id: 13,
         icon: Solarpowerbank1,
-        name: 'Pocket friendly Airpod',
+        name: 'solar powerbank',
         cartegory: 'electronics',
         price: '15000',
         review: '40',
@@ -185,7 +185,7 @@ const products = [
     {
         id: 14,
         icon: Solarpowerbank2,
-        name: 'Pocket friendly Airpod',
+        name: 'solar powerbank',
         cartegory: 'electronics',
         price: '15000',
         review: '40',

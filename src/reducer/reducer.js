@@ -73,15 +73,12 @@ const cartReducer = (state, action) => {
         })
         return { ...state, cart: decrease }
     }
-    if (action.type === 'SEARCH') {
-        return { ...state, search: action.payload }
-    }
     if (action.type === 'SEARCH_PRODUCTS') {
-        const { products, search } = action.payload
+        const { products, value } = action.payload
         const filtered = products.filter(item => {
-            return item.name.includes(search)
+            return value === '' ? item : item.name.includes(value)
         })
-        return { ...state, products: filtered }
+        return { ...state, searchedProducts: filtered }
     }
     if (action.type === 'UPDATE_MESSAGE') {
 

@@ -492,6 +492,24 @@ text-transform: uppercase;
   margin-top: 10px;
 }
 
+.search-form{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.search-form  input{
+  width: 80%;
+  height: 25px;
+  font-size: 1rem;
+  border: 1px solid rgb(193, 192, 192);
+  margin-top: 15px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 5px 5px 15px;
+}
+
 
 /* Footer style */
 

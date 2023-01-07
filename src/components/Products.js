@@ -5,32 +5,34 @@ import Search from './Search';
 import Star from './Stars';
 
 function Products() {
-    const { products } = useGlobalContext()
+    const { searchedProducts: items, products } = useGlobalContext()
 
     return (
         <div className="all-products">
             <div className='container'>
                 <Search products={products} />
-                < div className='products' >
-                    {
-                        products.map(product => {
-                            const { id, name, icon, review, price, star } = product
-                            return (
-                                <div key={id} className="product">
-                                    <div className="image">
-                                        <img src={icon} alt={name} />
+                {items.length < 1 ?
+                    <h2>No product match your search...</h2> :
+                    < div className='products' >
+                        {
+                            items.map(item => {
+                                const { id, name, icon, review, price, star } = item
+                                return (
+                                    <div key={id} className="product">
+                                        <div className="image">
+                                            <img src={icon} alt={name} />
+                                        </div>
+                                        <div className="info">
+                                            <p className='name'><Link to={`${id}`}>{name}</Link></p>
+                                            <p className='price'>{formatPrice(price)}</p>
+                                            <Star star={star} review={review} />
+                                        </div>
                                     </div>
-                                    <div className="info">
-                                        <p className='name'><Link to={`${id}`}>{name}</Link></p>
-                                        <p className='price'>{formatPrice(price)}</p>
-                                        <Star star={star} review={review} />
-                                    </div>
-                                </div>
-                            )
+                                )
 
-                        })
-                    }
-                </div >
+                            })
+                        }
+                    </div >}
             </div>
         </div>
     );
