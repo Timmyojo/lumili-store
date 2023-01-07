@@ -576,8 +576,12 @@ align-items: center;
   display: block;
 }
 
+.cta input {
+  width: 300px;
+}
+
 .cta .btn {
-  left: 285px;
+  left: 220px;
 }
 
 .single-product {
